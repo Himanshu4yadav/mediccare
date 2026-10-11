@@ -1,0 +1,25 @@
+{
+  "name": "mediccare-root",
+  "version": "1.0.0",
+  "description": "MedicCare – Smart Hospital & Emergency Management System (CSE Semester Project)",
+  "private": true,
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "seed": "node server/seed/seedData.js",
+    "test": "node server/tests/dsa.test.js",
+    "build": "npm --prefix client run build"
+  },
+  "keywords": [
+    "hospital-management",
+    "emergency-triage",
+    "dsa",
+    "mern",
+    "binary-max-heap",
+    "graph-bfs-dfs"
+  ],
+  "author": "MedicCare Engineering Team",
+  "license": "MIT"
+}
